@@ -2,6 +2,12 @@
 I have recently decided to transform my home network and during the process, I have acquired some new security gadgets. One of them is the UniFi Dream Machine that acts as a home security gateway. I have been extensively using the appliance for some time now and thought I would share some of my findings with this IoT device.
 
 ## The package  
+![01](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/01.png)
+![02](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/02.png)
+![03](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/03.png)
+![04](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/04.png)
+![05](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/05.png)
+![06](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/06.png)
 
 ## Setup and connectivity  
 
@@ -22,7 +28,9 @@ Blue | Device is configured and ready
 Slow Flashing Blue | Client connected to device via Bluetooth (BLE)
 Flashing Off/White/Blue | Device is in recovery mode
 
-* There is an option to Locate the device in case someone displaces it inside the house. The appliance will start to flash its LED in blue color.
+* There is an option to Locate the device in case someone displaces it inside the house. The appliance will start to flash its LED in blue color.  
+![24](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/24.png)
+
 * The device has a built-in speaker, which emits a certain tone when a firmware upgrade is finished or the device rebooted and is ready. This can also be a good indicator when the appliance reboots for some reason.
 
 ### Connectivity  
@@ -30,9 +38,23 @@ Flashing Off/White/Blue | Device is in recovery mode
 * For the evaluation I had connected Port 5 (Internet Port) to my ISP modem.
 
 ### Setup  
-* The initial setup is done via Mobile Phone App (UniFi Network) and took about 2 minutes to do. The UniFi app uses Bluetooth Low Energy (BLE) for this.
-* Interestingly, during the initial set-up, when asked to create an UI account or log in as already registered, if you took your time at this stage for more than a couple of minutes (~4-5 minutes), the device lost connection and basically forgets all previously configured setting and forces you to do the initial setup from the start. I had found that if you create the account or log in hastily (within ~1-2 minutes), the setup process goes through seamlessly.
-* There is no way to set up the UDM without an active internet connection. If you do not sign up and log in with an UI account, it will refuse to set up the device, also there are zero provisions to set up the UDM offline and then associate an Ubiquiti account later.
+* The initial setup is done via Mobile Phone App (UniFi Network) and took about 2 minutes to do. The UniFi app uses Bluetooth Low Energy (BLE) for this.  
+![07](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/07.png)
+![08](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/08.png)
+![09](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/09.png)
+
+* Interestingly, during the initial set-up, when asked to create an UI account or log in as already registered, if you took your time at this stage for more than a couple of minutes (~4-5 minutes), the device lost connection and basically forgets all previously configured setting and forces you to do the initial setup from the start. I had found that if you create the account or log in hastily (within ~1-2 minutes), the setup process goes through seamlessly.  
+![10](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/10.png)
+![11](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/11.png)
+![12](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/12.png)
+
+* There is no way to set up the UDM without an active internet connection. If you do not sign up and log in with an UI account, it will refuse to set up the device, also there are zero provisions to set up the UDM offline and then associate an Ubiquiti account later.  
+![13](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/13.png)
+![14](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/14.png)
+![15](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/15.png)
+![16](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/16.png)
+![17](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/17.png)
+![18](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/18.png)
 
 ## Firmware  
 * During the initial setup, the Mobile App requested an upgrade to be pulled and flashed the device with firmware version v1.5.6, which was released early 2020.
@@ -51,8 +73,11 @@ Flashing Off/White/Blue | Device is in recovery mode
 ## Speedtest  
 * After the initial setup is done, the device does a speed-test for Downloading, Uploading and measures latency. The test measurements were consistent and gave the right results for my fiber line.
 * From the UI, this speedtest looks to be an implementation of WiFiman.com, which has both web and App version.
-* The mobile app also asks for the ISP's promised Internet Speed to be set, as these parameters will be used to determine whether there is an issue with your Internet line. I assume if promised line speed drops by ~25%, the UI will raise an alert.
- 
+* The mobile app also asks for the ISP's promised Internet Speed to be set, as these parameters will be used to determine whether there is an issue with your Internet line. I assume if promised line speed drops by ~25%, the UI will raise an alert.  
+![21](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/21.png)
+![22](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/22.png)
+![23](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/23.png)
+
 ## First Look (UniFi App)
 * The App asks you to trust the server after the setup. The certificate is a self-signed one.
 * Devices menu will show your UDM (Firmware information, connected status and WiFi experience).
