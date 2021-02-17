@@ -162,7 +162,7 @@ Flashing Off/White/Blue | Device is in recovery mode
   * Family: Blocks access to all adult, pornographic and explicit sites. It also blocks proxy and VPN domains that are used to bypass the filters. Mixed content sites (like Reddit) are also blocked. Google, Bing, and Youtube are set to the Safe Mode. Malicious and Phishing domains are blocked.
 * UniFi DNS filter uses a simple host-based filter from cleanbrowsing.org.
 
-### Device fingerprinting  
+### Device Fingerprinting  
 * UniFi UDM relies on 3 ways to identify/fingerprint devices on the network:
   * Device OUI
   * Propriety Fingerprint Library
@@ -199,7 +199,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 ### Anti-DoS  
 * Currently no anti-DoS features are present in UDM. Once the IPS module (Suricata) is enabled, you can enable the emergingthreat-dos ruleset, that looks for certain patterns of DoS and can block them, but only on the UDM-Pro appliance, due to memory limitations.
 
-### IP Reputation/Safe Browsing  
+### Safe Browsing features  
 * Blocking malicious domains can be achieved via the:
   * Restrict Access to Malicious IP addresses option that use the clearbrowsing.org service
   * Or via Suricata IDS/IPS module  
@@ -229,7 +229,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 * It will try and ascertain 3 parameters of a host:
   * IP address
   * Operating system (best effort)
-  * Open ports
+  * Open ports  
 ![76](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/76.png)
 
 * The endpoint scanner will initiate the port scanning against a host, when the uptime of the newly connected device reaches 2 hours
