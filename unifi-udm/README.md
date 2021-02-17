@@ -80,18 +80,37 @@ Flashing Off/White/Blue | Device is in recovery mode
 
 ## First Look (UniFi App)
 * The App asks you to trust the server after the setup. The certificate is a self-signed one.
-* Devices menu will show your UDM (Firmware information, connected status and WiFi experience).
-* Opening up the UDM will show UDM name, System Uptime, Utilization, Internet Speeds, currently used network resource, Clients and Most active applications.
-* Drilling down further into the device pane, it will show uptime, WiFi channel utilizations on 2G and 5G, active Ethernet Ports and bunch of information on IP address, MAC address, FW version, Memory usage, Load Average.
+* Devices menu will show your UDM (Firmware information, connected status and WiFi experience).  
+![25](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/25.png)
+![26](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/26.png)
+![27](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/27.png)
+* Opening up the UDM will show UDM name, System Uptime, Utilization, Internet Speeds, currently used network resource, Clients and Most active applications.  
+![28](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/28.png)
+![29](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/29.png)
+![30](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/30.png)
+* Drilling down further into the device pane, it will show uptime, WiFi channel utilizations on 2G and 5G, active Ethernet Ports and bunch of information on IP address, MAC address, FW version, Memory usage, Load Average.  
+![25](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/31.png)
+![26](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/32.png)
 
 ## Operating system  
 * The UDM-Base runs a custom variant of a Linux OS. Functionalities are provided by a single large podman container. As a result, a number of configuration files are not directly modifiable.
 * You can also install pre-built docker images:
 
 ## UI/UX (Mobile app)  
-* Connected client information
-* Traffic information/breakdown
-* Connected clients (before and after fingerprinting)
+* Connected client information  
+![33](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/33.png)
+![34](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/34.png)
+![35](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/35.png)
+* Traffic information/breakdown  
+![36](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/36.png)
+![37](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/37.png)
+![38](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/38.png)
+![39](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/39.png)
+![40](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/40.png)
+![41](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/41.png)
+* Connected clients (before and after fingerprinting)  
+![42](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/42.png)
+![43](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/43.png)
 
 ## UI/UX (Website)  
 * Main dashboard can be edited with several widgets (widgets can’t be created by you however)
