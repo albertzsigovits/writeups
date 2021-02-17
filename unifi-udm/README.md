@@ -84,10 +84,12 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![25](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/25.png)
 ![26](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/26.png)
 ![27](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/27.png)
+
 * Opening up the UDM will show UDM name, System Uptime, Utilization, Internet Speeds, currently used network resource, Clients and Most active applications.  
 ![28](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/28.png)
 ![29](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/29.png)
 ![30](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/30.png)
+
 * Drilling down further into the device pane, it will show uptime, WiFi channel utilizations on 2G and 5G, active Ethernet Ports and bunch of information on IP address, MAC address, FW version, Memory usage, Load Average.  
 ![25](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/31.png)
 ![26](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/32.png)
@@ -101,35 +103,56 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![33](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/33.png)
 ![34](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/34.png)
 ![35](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/35.png)
+
 * Traffic information/breakdown  
 ![36](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/36.png)
 ![37](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/37.png)
 ![38](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/38.png)
 ![39](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/39.png)
 ![40](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/40.png)
+
 * Connected clients (before and after fingerprinting)  
 ![42](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/42.png)
 ![43](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/43.png)
 
 ## UI/UX (Website)  
-* Main dashboard can be edited with several widgets (widgets can’t be created by you however)
+* Main dashboard can be edited with several widgets (widgets can’t be created by you however)  
+![44](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/44.png)
+![45](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/45.png)
+
 * Login panel and basic device information
+![46](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/46.png)
+![47](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/47.png)
+![48](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/48.png)
+
 * New login panel in v1.8.5 with 2FA
-* Map for all devices, you can also upload a custom floor plan and spread the devices out on that
+![49](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/49.png)
+
+* Map for all devices, you can also upload a custom floor plan and spread the devices out on that  
+![50](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/50.png)
+![51](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/51.png)
 
 ## Security Features  
 
 ### Firewall  
 * Conventional firewall rules can be implemented on L3/L4 level with Allow or Block action on both In or Out direction.
 * Restrict Access to ToR: When enabled will block access to The Onion Router. 
-* Restrict Access to Malicious IP Addresses: When enabled will block access to IP addresses or blocks of addresses that have been recognized as passing malicious traffic. 
+* Restrict Access to Malicious IP Addresses: When enabled will block access to IP addresses or blocks of addresses that have been recognized as passing malicious traffic.  
+![52](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/52.png)
 
 ### Network Isolation  
+![53](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/53.png)
+![54](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/54.png)
+![55](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/55.png)
+![56](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/56.png)
 
 ### GeoIP Filtering
 * Blocking can be done from the Settings page as well by specifying the country and adding the action to it (Block/Allow) and specify direction (In/Out/Both)
 * Maximum number of blocked countries is only 150
-* Blocking individual countries can be configured on the Threat Management Dashboard section of the controller. Blocking is as easy as navigating to the map, clicking on a country, and confirming by clicking "Block".
+* Blocking individual countries can be configured on the Threat Management Dashboard section of the controller. Blocking is as easy as navigating to the map, clicking on a country, and confirming by clicking "Block".  
+![57](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/57.png)
+![58](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/58.png)
+![59](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/59.png)
 
 ### DNS Filtering  
 * Clients that use VPN, DNS-over-HTTPS, or DNS-over-TLS will have non-standard DNS requests that will not be seen by the device.
@@ -138,12 +161,21 @@ Flashing Off/White/Blue | Device is in recovery mode
   * Adult: Blocks access to all adult, pornographic and explicit sites. It does not block proxy or VPNs, nor mixed-content sites. Sites like Reddit are allowed. Google and Bing are set to the "Safe Mode". Malicious and Phishing domains are blocked.
   * Family: Blocks access to all adult, pornographic and explicit sites. It also blocks proxy and VPN domains that are used to bypass the filters. Mixed content sites (like Reddit) are also blocked. Google, Bing, and Youtube are set to the Safe Mode. Malicious and Phishing domains are blocked.
 * UniFi DNS filter uses a simple host-based filter from cleanbrowsing.org.
-Device fingerprinting
+
+### Device fingerprinting  
 * UniFi UDM relies on 3 ways to identify/fingerprint devices on the network:
   * Device OUI
   * Propriety Fingerprint Library
   * User Submission
 * Device Fingerprinting Settings
+![60](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/60.png)
+![61](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/61.png)
+![62](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/62.png)
+![63](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/63.png)
+![64](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/64.png)
+![65](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/65.png)
+![66](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/66.png)
+
 * When a device is first connected to the network, it gets assigned a fingerprint based on OUI
 * A user can decide to manually assign a Manufacturer to the device in case it has a missing icon, or current one is wrong
 * Here the device type was determined via the Fingerprint Library
@@ -152,50 +184,72 @@ Device fingerprinting
 * For Parental Control, we have 3 settings
   * All sites are allowed
   * Work profile, explicit, pornographic, and malicious domains are blocked
-  * Family profile, VPN, explicit, pornographic and malicious domains are blocked
-* You can also specify which certain Application or Family of applications should not pass the gateway (Youtube/Office/File sharing services, etc.) and these can be individually selected for block
-* The UDM also has the option to limit the availability of the WiFi for certain hours, limiting how kids can connect to the WiFi
+  * Family profile, VPN, explicit, pornographic and malicious domains are blocked  
+![67](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/67.png)
 
-### Adblocking  
+* You can also specify which certain Application or Family of applications should not pass the gateway (Youtube/Office/File sharing services, etc.) and these can be individually selected for block  
+![68](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/68.png)
+
+* The UDM also has the option to limit the availability of the WiFi for certain hours, limiting how kids can connect to the WiFi  
+![69](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/69.png)
+
+### Adblocking/Privacy  
 * No specific Ad-blocking capabilities were observed.
 
-### DoS  
+### Anti-DoS  
 * Currently no anti-DoS features are present in UDM. Once the IPS module (Suricata) is enabled, you can enable the emergingthreat-dos ruleset, that looks for certain patterns of DoS and can block them, but only on the UDM-Pro appliance, due to memory limitations.
 
-### IP Reputation/Safe browsing  
+### IP Reputation/Safe Browsing  
 * Blocking malicious domains can be achieved via the:
   * Restrict Access to Malicious IP addresses option that use the clearbrowsing.org service
-  * Or via Suricata IDS/IPS module
+  * Or via Suricata IDS/IPS module  
+![70](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/70.png)
 
 ### IPS/IDS  
 * Enabling the IDS/IPS module (Suricata) will decrease the maximum throughput of the WAN port to 850 Mbps on the UniFi Dream Machine (UDM-Base) throughput: 850 Mbps and to 3.5 Gbps on the UniFi Dream Machine Pro (UDM-Pro). Enabling Device Fingerprinting will also incur some penalty on the throughput.
-* The current Suricata version in use by UDM is version 4.1.8 which is End of Life. Representatives of Ubiquiti claim that the development team still heavily focuses on keeping the version 4 branch alive by adding security patches and fixes to it.
+* The current Suricata version in use by UDM is version 4.1.8 which is End of Life. Representatives of Ubiquiti claim that the development team still heavily focuses on keeping the version 4 branch alive by adding security patches and fixes to it.  
+![71](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/71.png)
+
 * Due to the amount of available memory (2 GB) on the UDM-Base only a limited selection of threat categories can be enabled.
 * While on the UDM-Pro, the following set of ET rules could be enabled, due to the fact it has 3 GB of internal memory.
 * The whitelisting function of the IPS engine allows a UniFi Administrator to create a list of trusted IP's. The traffic, depending on the direction selected, will not get blocked to or from the identified IPs. 
-* Suricata Dashboard
-* Suricata Settings Page (increasing the sensitivity level enables further rule files, and eats more RAM)
-* ET rule categories
+* Suricata Dashboard  
+![72](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/72.png)
+
+* Suricata Settings Page (increasing the sensitivity level enables further rule files, and eats more RAM)  
+![73](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/73.png)
+
+* ET rule categories  
+![74](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/74.png)
 
 ### Threat scanner  
-* This feature claims to auto-scan endpoints connected to the network to identify vulnerabilities.
+* This feature claims to auto-scan endpoints connected to the network to identify vulnerabilities.  
+![75](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/75.png)
+
 * It will try and ascertain 3 parameters of a host:
   * IP address
   * Operating system (best effort)
   * Open ports
+![76](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/76.png)
+
 * The endpoint scanner will initiate the port scanning against a host, when the uptime of the newly connected device reaches 2 hours
 * Once the scan is done, results will be displays under Threat Management/Endpoint Scanning.
-* If no open ports were found, no entry will be in this action, so for a host to show up here, at least one port needs to be in open state.
+* If no open ports were found, no entry will be in this action, so for a host to show up here, at least one port needs to be in open state.  
+![77](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/77.png)
+
 * The endpoint scanner gets invoked with **nmap -sV -O -oG** parameters
 
 ### Honeypot
 * There is a feature to turn on an internal honeypot to detect malware, worms and other types of malicious traffic attempting to scan your network for vulnerabilities.
 * The "internal honeypot" feature is a passive detection system that listens for LAN clients attempting to gain access to unauthorized services or hosts. Clients that are potentially infected with worm or exfiltration type vulnerabilities are known to scan networks, infect other hosts, and potentially snoop for information on easy-to-access servers.
-  * First you have to specify an IP address outside of DHCP IP range (for ex. 192.168.2.2)
-* Checking new processes on the UDM reveals that a new dropbear instance has been spawned with an MotD under /etc/issue:
+  * First you have to specify an IP address outside of DHCP IP range (for ex. 192.168.2.2)  
+![78](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/78.png)
+
 * Scanning from another host, the IP 192.168.2.2 shows plenty of open ports:
 * The scanning activity also shows up under the Honeypot pane on the UI, but there is not many action that you can take
-  * The only option is to block the IP the client is coming from, so no further scans can be initiated
+  * The only option is to block the IP the client is coming from, so no further scans can be initiated  
+![79](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/79.png)
+
 * Manually calling up on port 8080 reveals some fake HTTP 400 page
 * You can also connect to open TCP port 23 and gibberish data and a login prompt will come back, but all default password fails
 
@@ -375,5 +429,5 @@ Login incorrect
 * Security features are good for the average home user, but those features lack the control of granularity that real power users could use  
 * Some of those security features are implemented in the most basic sense (DNS filtering with a simple blocklist, no DNS-over-HTTP or other advanced features)  
 * No Anti-DoS module, but Suricata makes up for that  
-* No ad-blocking capabilities  
-* Suricata is still on version 4.1.8, which is End-of-Life, could use an upgrade  
+* No ad-blocking, DNS privacy capabilities  
+* Suricata is still on version 4.1.8, which is End-of-Life, could use an upgrade to v5 or v6  
