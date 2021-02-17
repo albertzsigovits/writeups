@@ -78,7 +78,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![22](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/22.png)
 ![23](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/23.png)
 
-## First Look (UniFi App)
+## First Look (UniFi App)  
 * The App asks you to trust the server after the setup. The certificate is a self-signed one.
 * Devices menu will show your UDM (Firmware information, connected status and WiFi experience).  
 ![25](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/25.png)
