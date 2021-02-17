@@ -107,7 +107,6 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![38](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/38.png)
 ![39](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/39.png)
 ![40](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/40.png)
-![41](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/41.png)
 * Connected clients (before and after fingerprinting)  
 ![42](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/42.png)
 ![43](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/43.png)
