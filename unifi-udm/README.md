@@ -120,12 +120,10 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![44](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/44.png)
 ![45](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/45.png)
 
-* Login panel and basic device information
-![46](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/46.png)
-![47](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/47.png)
+* Login panel and basic device information  
 ![48](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/48.png)
 
-* New login panel in v1.8.5 with 2FA
+* New login panel in v1.8.5 with 2FA  
 ![49](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/49.png)
 
 * Map for all devices, you can also upload a custom floor plan and spread the devices out on that  
@@ -167,7 +165,7 @@ Flashing Off/White/Blue | Device is in recovery mode
   * Device OUI
   * Propriety Fingerprint Library
   * User Submission
-* Device Fingerprinting Settings
+* Device Fingerprinting Settings  
 ![60](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/60.png)
 ![61](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/61.png)
 ![62](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/62.png)
