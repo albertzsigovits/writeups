@@ -1,5 +1,5 @@
 # UniFi Dream Machine review  
-I have recently decided to transform my home network and during the process, I have acquired some new security gadgets. One of them is the UniFi Dream Machine that acts as a home security gateway. I have been extensively using the appliance for some time now and thought I would share some of my findings with this IoT device.
+I have recently decided to transform my home network and during the process, I have acquired some new security gadgets. One of them is the UniFi Dream Machine that acts as a home security gateway. I have been extensively using the appliance for some time now and thought I would share some of my findings with this IoT device. Let me know what tips and tricks have you discovered with your UDM.  
 
 ## The package  
 ![01](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/01.png)
@@ -95,8 +95,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![26](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/32.png)
 
 ## Operating system  
-* The UDM-Base runs a custom variant of a Linux OS. Functionalities are provided by a single large podman container. As a result, a number of configuration files are not directly modifiable.
-* You can also install pre-built docker images:
+* The UDM-Base runs on a custom Linux OS. You can further add functionalities to your UDM with podman containers. The main unifi system is also a single podman container. You can also install pre-built docker images.
 
 ## UI/UX (Mobile app)  
 * Connected client information  
