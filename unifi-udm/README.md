@@ -209,7 +209,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![71](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/71.png)
 
 * Due to the amount of available memory (2 GB) on the UDM-Base only a limited selection of threat categories can be enabled.
-* While on the UDM-Pro, the following set of ET rules could be enabled, due to the fact it has 3 GB of internal memory.
+* While on the UDM-Pro, the following set of ET rules could be enabled, due to the fact it has 2 GB of internal memory.
 * The whitelisting function of the IPS engine allows a UniFi Administrator to create a list of trusted IP's. The traffic, depending on the direction selected, will not get blocked to or from the identified IPs. 
 * Suricata Dashboard  
 ![72](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/72.png)
@@ -424,8 +424,7 @@ Login incorrect
 * Some of those features are still in Alpha or Beta stage and need further development to iron out bugs and inconsistencies  
 * On UX/UI front, Ubiquiti does more than a great job, visuals are sleek and minimalist  
 * While old classic settings page shows all features, new settings pane does not show everything, the new settings page is still under development it seems  
-* Security features are good for the average home user, but those features lack the control of granularity that real power users could use  
 * Some of those security features are implemented in the most basic sense (DNS filtering with a simple blocklist, no DNS-over-HTTP or other advanced features)  
 * No Anti-DoS module, but Suricata makes up for that  
-* No ad-blocking, DNS privacy capabilities  
+* No ad-blocking
 * Suricata is still on version 4.1.8, which is End-of-Life, could use an upgrade to v5 or v6  
