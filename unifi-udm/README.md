@@ -1,6 +1,11 @@
 # UniFi Dream Machine review  
 I have recently decided to transform my home network and during the process, I have acquired some new security gadgets. One of them is the UniFi Dream Machine that acts as a home security gateway. I have been extensively using the appliance for some time now and thought I would share some of my findings with this IoT device. Let me know what tips and tricks have you discovered with your UDM.  
 
+ToDos for myself:  
+* Set up RADIUS
+* Set up PiHole DNS in a container
+* See opportunities to run Suricata 5.x
+
 ## The package  
 ![01](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/01.png)
 ![02](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/02.png)
