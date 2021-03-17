@@ -133,7 +133,22 @@ Flashing Off/White/Blue | Device is in recovery mode
 ![51](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/51.png)
 
 ## VPN server  
+For remote connection, you can set up L2TP over IPSec.  
+* Under Settings/Services/RADIUS/Server enter a secret password and click apply to enable the RADIUS server.  
+* Next, choose the Users tab to create a new user with a strong password.  
+* Finally, go to Settings/Networks/Create New Network and select Remote User VPN to create the VPN server.  
 
+```javascript
+Name: VPN
+Type: Remote User VPN
+VPN Type: L2TP Server
+Protocol: IPv4
+Pre-Shared Key:
+Gateway IP/Subnet: 192.168.50.1/24
+Name Server: Auto
+RADIUS Profile: Default
+MS-CHAP v2: Unchecked
+```
 
 ## Security Features  
 
