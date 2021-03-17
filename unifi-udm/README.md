@@ -2,9 +2,7 @@
 I have recently decided to transform my home network and during the process, I have acquired some new security gadgets. One of them is the UniFi Dream Machine that acts as a home security gateway. I have been extensively using the appliance for some time now and thought I would share some of my findings with this IoT device. Let me know what tips and tricks have you discovered with your UDM.  
 
 ToDos for myself:  
-* Set up RADIUS
-* Set up PiHole DNS in a container
-* See opportunities to run Suricata 5.x
+* Set up PiHole DNS in a container  
 
 ## The package  
 ![01](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/01.png)
@@ -209,7 +207,7 @@ Flashing Off/White/Blue | Device is in recovery mode
 
 ### IPS/IDS  
 * Enabling the IDS/IPS module (Suricata) will decrease the maximum throughput of the WAN port to 850 Mbps on the UniFi Dream Machine (UDM-Base) throughput: 850 Mbps and to 3.5 Gbps on the UniFi Dream Machine Pro (UDM-Pro). Enabling Device Fingerprinting will also incur some penalty on the throughput.
-* The current Suricata version in use by UDM is version 4.1.8 which is End of Life. Representatives of Ubiquiti claim that the development team still heavily focuses on keeping the version 4 branch alive by adding security patches and fixes to it.  
+* The current Suricata version in use by UDM is version 5.0.5 (as of firmware v1.9.0).  
 ![71](https://github.com/albertzsigovits/writeups/blob/main/unifi-udm/images/71.png)
 
 * Due to the amount of available memory (2 GB) on the UDM-Base only a limited selection of threat categories can be enabled.
@@ -430,5 +428,5 @@ Login incorrect
 * While old classic settings page shows all features, new settings pane does not show everything, the new settings page is still under development it seems  
 * Some of those security features are implemented in the most basic sense (DNS filtering with a simple blocklist, no DNS-over-HTTP or other advanced features)  
 * No Anti-DoS module, but Suricata makes up for that  
-* No ad-blocking
-* Suricata is still on version 4.1.8, which is End-of-Life, could use an upgrade to v5 or v6  
+* No ad-blocking  
+* Suricata version is at 5.0.5, but there are more features in v6  
